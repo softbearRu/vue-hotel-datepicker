@@ -465,7 +465,7 @@ $black:                #000;
 $gray:                 #424b53;
 $primary-text-color:   #35343d;
 $lightest-gray:        #f3f5f8;
-$primary-color: #00ca9d;
+$primary-color: black;
 $primary-color: $primary-color;
 $medium-gray: #999999;
 $light-gray: #d7d9e2;
@@ -618,7 +618,7 @@ $font-small: 14px;
       color: $primary-color;
       z-index: 1;
       position: relative;
-      box-shadow: 0 0 10px 3px rgba($gray, .4);
+      box-shadow: 0 0 3px 3px rgba($gray, .1);
     }
 
     &--disabled {
@@ -637,7 +637,7 @@ $font-small: 14px;
         color: $primary-color;
         z-index: 1;
         position: relative;
-        box-shadow: 0 0 10px 3px rgba($gray, .4);
+        box-shadow: 0 0 3px 3px rgba($gray, .1);
       }
     }
 

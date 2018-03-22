@@ -60,7 +60,7 @@ export default {
     return new Date(
       firstDay.setDate(
         firstDay.getDate()
-        -firstDay.getDay()
+        -firstDay.getDay() + 1
       )
     );
   },

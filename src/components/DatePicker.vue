@@ -247,15 +247,15 @@ export default {
     ...Helpers,
 
     handleWindowResize() {
-      let screenSizeInEm = window.innerWidth / parseFloat(getComputedStyle(document.querySelector('body'))['font-size']);
+      let screenSizeInEm = window.innerWidth;
 
-      if (screenSizeInEm < 31) {
+      if (screenSizeInEm < 768) {
         this.screenSize = 'smartphone';
       }
-      else if (screenSizeInEm > 30 && screenSizeInEm < 49) {
+      else if (screenSizeInEm >= 768 && screenSizeInEm < 992) {
         this.screenSize = 'tablet';
       }
-      else if (screenSizeInEm > 48) {
+      else if (screenSizeInEm >= 992) {
         this.screenSize = 'desktop';
       }
 
@@ -436,11 +436,11 @@ export default {
  * RESPONSIVE LAYOUT HELPERS
  * ============================================================*/
 $tablet: '(min-width: 768px) and (max-width: 992px)';
-$phone: '(max-width: 30em)';
+$phone: '(max-width: 768px)';
 $desktop: '(min-width: 992px)';
 $tablet-up: '(min-width: 768px)';
 $up-to-tablet: '(max-width: 992px)';
-$extra-small-screen: '(max-width: 576)';
+$extra-small-screen: '(max-width: 576px)';
 
 @mixin device($device-widths) {
   @media screen and #{$device-widths} { @content }

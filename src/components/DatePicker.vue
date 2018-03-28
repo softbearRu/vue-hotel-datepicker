@@ -435,12 +435,12 @@ export default {
 /* =============================================================
  * RESPONSIVE LAYOUT HELPERS
  * ============================================================*/
-$tablet: '(min-width: 30em) and (max-width: 49em)';
+$tablet: '(min-width: 768px) and (max-width: 992px)';
 $phone: '(max-width: 30em)';
-$desktop: '(min-width: 49em)';
-$tablet-up: '(min-width: 30em)';
-$up-to-tablet: '(max-width: 49em)';
-$extra-small-screen: '(max-width: 23em)';
+$desktop: '(min-width: 992px)';
+$tablet-up: '(min-width: 768px)';
+$up-to-tablet: '(max-width: 992px)';
+$extra-small-screen: '(max-width: 576)';
 
 @mixin device($device-widths) {
   @media screen and #{$device-widths} { @content }
